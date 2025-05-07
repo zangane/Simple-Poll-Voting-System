@@ -1,0 +1,17 @@
+{
+    "question": "Which programming language do you prefer?",
+    "options": [
+        "PHP",
+        "JavaScript",
+        "Python",
+        "Java",
+        "C#"
+    ],
+    "votes": [
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}
