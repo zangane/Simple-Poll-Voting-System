@@ -27,13 +27,10 @@ A simple yet powerful voting system built with pure PHP (OOP). It allows you to 
 
 What is your favorite programming language?
 
-PHP
-
-JavaScript
-
-Python
-
-Java
+1 - PHP
+2 - JavaScript
+3 - Python
+4 - Java
 
 
 **User Vote:**  
@@ -41,10 +38,10 @@ The user selects "PHP" and submits.
 
 **Result Output:**
 
-PHP - 12 votes (40%)
-JavaScript - 9 votes (30%)
-Python - 6 votes (20%)
-Java - 3 votes (10%)
+1 - PHP - 12 votes (40%)
+2 - JavaScript - 9 votes (30%)
+3 - Python - 6 votes (20%)
+4 - Java - 3 votes (10%)
 
 
 
