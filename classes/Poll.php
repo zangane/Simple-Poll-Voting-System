@@ -15,11 +15,11 @@ class Poll {
 
     private function load() {
         if (!file_exists($this->file)) {
-            throw new Exception("Poll not found.");
+            throw new Exception("Poll not found: {$this->id}");
         }
         $data = json_decode(file_get_contents($this->file), true);
-        $this->question = $data["question"];
-        $this->options = $data["options"];
+        $this->question = $data["question"] ?? "Untitled Poll";
+        $this->options = $data["options"] ?? [];
         $this->votes = $data["votes"] ?? array_fill(0, count($this->options), 0);
     }
 
@@ -49,7 +49,7 @@ class Poll {
         $data = [
             "question" => $this->question,
             "options" => $this->options,
-            "votes" => $this->votes,
+            "votes" => $this->votes
         ];
         return file_put_contents($this->file, json_encode($data, JSON_PRETTY_PRINT)) !== false;
     }
