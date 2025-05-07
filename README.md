@@ -64,7 +64,7 @@ The user selects "PHP" and submits.
 
 ```bash
 git clone https://github.com/zangane/Simple-Poll-Voting-System.git
-
+```
 
 2. Open `index.php` in browser to see and vote.
 
